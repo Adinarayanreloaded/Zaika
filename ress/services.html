@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="darkmode.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        body {
+            background-color: white;
+
+        }
+
+        .container1 {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 2%;
+        }
+
+        .container5 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 2%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 2%;
+        }
+
+
+        nav li {
+            list-style-type: none;
+            padding: 20px;
+            float: left;
+            color: white;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            background-color: rgba(255, 23, 23, 0.774);
+            height: 70px;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .neeche {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+            background: #080505;
+            margin-bottom: 2rem;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        .nc {
+            margin-top: 3rem;
+        }
+
+        @media (max-width:768px) {
+            .container3 {
+                display: block;
+
+                height: auto;
+            }
+
+            .container4 {
+                display: block;
+
+                height: auto;
+            }
+
+            .container5 {
+                display: block;
+
+                height: auto;
+            }
+
+            .container2 {
+                display: block;
+                height: auto;
+            }
+
+            .container1 {
+                display: block;
+
+
+            }
+
+            .neeche {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 2rem;
+                background: #080505;
+                margin-bottom: 2rem;
+                height: 300px;
+                width: 100%;
+                margin-bottom: 0;
+                color: white;
+            }
+
+            .nc {
+                margin-top: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul style="font-size: larger; font-weight: bolder;">
+                <a href="">
+                    <li><img src="logorestaurant.png" alt="" height="110px" width="200px"
+                            style="margin-left: -300px;margin-top: -20px;" alt=""></li>
+                </a>
+                <a href="rpage1.html">
+                    <li>Home</li>
+                </a>
+                <a href="Menu.html">
+                    <li>Menu</li>
+                </a>
+                <a href="About Us Final.html">
+                    <li>About</li>
+                </a>
+                <a href="services.php">
+                    <li>Service</li>
+                </a>
+                <a href="contact us final.html">
+                    <li>Contact</li>
+                </a>
+                <li style="margin-left: 30px;margin-top: 10px;">
+                    <div id="container">
+                        <label class="switch">
+                            <input type="checkbox" onclick="changeMode()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container1" style="color:black;">
+        <div
+            style="background-color: white;background-image: url(pexels-kampus-production-8629079.jpg);
+        background-repeat: no-repeat;background-size: cover; display: flex; align-items: center; justify-content: center;  height: 750px;">
+            <!-- <div   > -->
+            <marquee behavior="" direction="" scrollamount="20">
+                <h1
+                    style="color: rgb(3, 1, 1); font-size: 500%; background-color: rgb(180, 255, 130);width: fit-content;margin-top: 300px;">
+
+                    ZAIKA SERVICES SINCE 1960
+                </h1>
+            </marquee>
+            <!-- </div> -->
+        </div>
+        <div
+            style="background-color: rgb(107, 2, 2);height:400px;display: flex; align-items: center; justify-content: center;">
+            <center>
+                <h1 style="color: rgb(241, 241, 255);">
+                    NEED A CATERING?
+                </h1>
+                <br>
+                <form class="contact" action="form5.php" method="post" style="size: 30rem;">
+
+                    <input type="text" name="Name" id="Name" class="text-box" placeholder="Your Name" required
+                        style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                    <br>
+                    <br>
+                    <input type="email" name="Email" id="Email" class="text-box" placeholder="Your Email" required
+                        style="color: rgb(2, 2, 2); border: 3px solid rgb(17, 17, 17) ;border-radius: 8px; ">
+                    <br>
+                    <br>
+                    <input type="text" name="phone" id="phone" class="text-box" placeholder="Your phone" required
+                        style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                    <br>
+                    <br>
+                    <input type="text" name="city" id="city" class="text-box" placeholder="Your city" required
+                        style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                    <br>
+
+                    <br>
+                    <input type="submit" value="Submit" style="background-color: black; color: white; padding: 5px;">
+
+                    </br>
+                    <br>
+                </form>
+                <!-- <button style="width: fit-content;width: fit-content;background-color: black;">Check for 
+                    Availability</button> -->
+                <input type="submit" value="Check for Availability"
+                    style="background-color: black; color: white; padding: 5px;">
+            </center>
+        </div>
+        <!-- <marquee behavior="" direction="">
+    <center>
+    <h1 style="font-size:200%;font-weight: bolder;color: rgb(255, 245, 245); height: 200px;margin-bottom: 100px;">Our Top Services</h1></center></marquee> -->
+
+        <!-- container 3 ka designing -->
+        
+        <div class="container3" style="color: white; margin-top: -220px; height: 300px;" data-aos="fade-right">
+            <div style="height: 400px;width: 600px; background-image: url(https://images.pexels.com/photos/3843224/pexels-photo-3843224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-repeat: no-repeat;background-size: cover;">
+                <!-- <img src="https://images.pexels.com/photos/3843224/pexels-photo-3843224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" height="400px" width="500px" style="margin-left: 50px;"> -->
+            </div>
+            <div style="color: red; display: flex; align-items: center; justify-content: center;margin-left: -60px;">
+                <center>
+                    <h1>
+                        <strong> <u> EXQUISITE CUISINE AND FANTASTIC CUSTOMER CARE </u> </strong>
+                    </h1>
+                    <br>
+
+                    <p style="font-size: x-large;color:rgb(0, 207, 0);"> Zaika is a full service catering and event
+                        planning company dedicated to provide you with exquisite cuisine and fantastic customer service.
+                        We offer a variety of menus and design options for everything from box lunches to full service
+                        platted dinners.</p>
+                    <br>
+                    <a href="About Us Final.html" target="_blank"><button style="background-color: teal; color: white; padding: 4px;">
+                            KNOW MORE
+                        </button></a>
+                    </br>
+                </center>
+            </div>
+        </div>
+
+        <!-- container 4 ka designing -->
+        <div class="container4" style="color: rgb(238, 238, 238); height: 300px;margin-top: 190px;" data-aos="flip-left">
+            <div
+                style="display:flex; justify-content: center; align-items: center; color: rgb(255, 0, 0);margin-left: 40px;">
+                <center>
+                    <strong> 
+                            <h1 ><u>
+                                WE PROVIDE CATERING SERVICES
+                            </h1></u>
+                        </strong>
+                    <br>
+                    <ul style="list-style-type: none;font-size: x-large;color:rgb(0, 207, 0);">
+                        <li>
+                            GRADUATION PARTY
+                        </li>
+                        <br>
+                        <li>
+                            WEDDING PARTY
+                        </li>
+                        <br>
+                        <li>
+                            COMMUNION PARTY
+                        </li>
+                        <br>
+                        <li>
+                            BIRTHDAY PARTY
+                        </li>
+                        <br>
+                        <li>
+                            ANNIVERSARY PARTY
+                        </li>
+                        <br>
+                        <li>
+                            RETIREMENT PARTY
+                        </li>
+                        <br>
+                        <li>
+                            BUSINESS MEETING
+                        </li>
+                        <br>
+
+                    </ul>
+                   
+                    <a href="Menu.html"  target="_blank"><button style="background-color: teal; color: white; padding: 6px;">
+                            MORE
+                        </button></a>
+
+
+                </center>
+
+                <!-- display: flex;align-items: center; justify-content: center; -->
+            </div>
+            <div style="height: 400px;
+            background-image: url(https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-repeat: no-repeat; background-size: cover;margin-top: 30px; ">
+                <!-- <img src="https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" height="400px" width="500px" style="margin-top: 40px;"> -->
+            </div>
+        </div>
+
+        <!-- container 5 ka designing -->
+        
+        <div class="container5" style="color: red;margin-top: 250px;" ; data-aos="fade-left">
+            <div style=" background-image: url(https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);background-repeat: none;background-size: cover; background-color: white;width: 600px;height: 400px;margin-top: 30px;">
+                <!-- <img src="https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""> -->
+            </div>
+            <div style=" display: flex; align-items: center; justify-content: center; margin-left: -20px;">
+                <center>
+                    <strong> 
+                            <h1><u>
+                                OUR FOOD WILL MAKE YOU FEEL GOOD!</u>
+                            </h1>
+                         </strong>
+                    <br>
+
+                    <p style="font-size: x-large;color:rgb(0, 207, 0);">We offer a variety of menu options to customize any
+                        event with your own personal selections. Just ask for us, set up an appointment to help plan
+                        your event and leave the rest to us. We personalize your event.</p>
+
+                    <p style="font-size: x-large;color:rgb(0, 207, 0);"> Whether it is a graduation party, formal wedding,
+                        holiday party, or back yard picnic, we can do it all just give us a call and we'll assist you
+                        with the rest. Zaika catering can provide you with delivery or you can simply pick up your order
+                        and go. </p>
+                </center>
+            </div>
+        </div>
+
+        <!-- container 6 ka designing -->
+    </div>
+    <div class="container2" data-aos="flip-right">
+        <div class style="height: 600px; color: red; display: flex; justify-content: center; align-items: center;">
+            <center>
+                <strong> 
+                        <h1><u>
+                            FAST DELIVERY & GOOD PRICE ALWAYS</u>
+                        </h1>
+                    </strong>
+            </center>
+        </div>
+       
+        <!-- style="   display: flex;align-items: center; justify-content: center;" -->
+        <div style="height: 400px; background-image: url(https://images.pexels.com/photos/4393668/pexels-photo-4393668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-repeat: no-repeat; background-size: cover;margin-top: 50px;
+        ">
+            <!-- <img src="https://images.pexels.com/photos/4393668/pexels-photo-4393668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""> -->
+        </div>
+
+    </div>
+
+    <script>
+        function changeMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+
+    <footer>
+
+        <div class="neeche">
+
+            <div class="nc" style="display: flex;justify-content: center;">
+
+
+                <ul style="list-style: none;">
+                    <h1> About us</h1>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Our Products</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="nc" style="display: flex;justify-content: center;">
+
+
+                <ul style="list-style: none;">
+                    <h1> Our Products</h1>
+                    <li>Cream Chicken</li>
+                    <li>Butter Chicken</li>
+                    <li>Paneer Tikka</li>
+                    <li>Mix Veg</li>
+                    <li>Chicken Tikka</li>
+                </ul>
+
+            </div>
+            <div class="nc" style="display: flex;justify-content: center;">
+
+
+                <ul style="list-style: none;">
+                    <h1> Store Locator</h1>
+                    <li>Ludhiana</li>
+                    <li>Chandigarh</li>
+                    <li>Noida</li>
+                    <li>Ghaziabad</li>
+                    <li>Mumbai</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
