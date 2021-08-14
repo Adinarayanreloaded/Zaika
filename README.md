@@ -1,6 +1,10 @@
 # Zaika
 We have created a website which provides multiple landing pages and a complete solution for a restaurant website which they need from catering to food ordering, booking and reserving table to contacting us. 
 
+Video:
+
+https://drive.google.com/file/d/1CxApFsN1JEmkd9My_TyXy-IftgjJvvqY/view?usp=sharing
+
 Home Page and Book Table Page
 
 The Home Page describes everything about Zaika from the history to the gallery of dishes. There is direct WhatsApp integration on the page by the help of which we can directly talk the customer.
