@@ -2,9 +2,6 @@
 We have created a website which provides multiple landing pages and a complete solution for 
 a restaurant website which they need from catering to food ordering, booking and reserving table to contacting us. 
 
-Video:
-
-https://drive.google.com/file/d/1CxApFsN1JEmkd9My_TyXy-IftgjJvvqY/view?usp=sharing
 
 Features:
 1.	WhatsApp Integration
